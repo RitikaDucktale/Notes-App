@@ -11,7 +11,6 @@ import { useState } from "react";
 interface props {
   note: Note;
 }
-
 const Card = (props: props) => {
   const {
     openFormPageModal,
@@ -32,12 +31,13 @@ const Card = (props: props) => {
   const displayText = isExpanded?  note.content :note.content.slice(0, 300) ;
 
   const onEditHandler = (id: string) => {
-    const editNote = notes.filter((note) => note.id == id);
+    const editNote = notes.find((note) => note.id == id);
+    if(!editNote) return
     openFormPageModal();
     setButtonText("Edit");
-    setTitle(editNote[0].title);
-    setContent(editNote[0].content);
-    setId(editNote[0].id);
+    setTitle(editNote.title);
+    setContent(editNote.content);
+    setId(editNote.id);
   };
 
   const onDeleteHandler = (id: string) => {

@@ -1,5 +1,5 @@
 import styles from "./NotesPage.module.css";
-import NotFoundImg from '../../assets/notFoundImg.jpg';
+import NotFoundImg from '../../assets/notFoundImg.png';
 import EmptyNotes from '../../assets/EmptyNotes.png'
 import Header from "../../components/header/Header";
 import { useNotesContext } from "../../contexts/NotesContext";

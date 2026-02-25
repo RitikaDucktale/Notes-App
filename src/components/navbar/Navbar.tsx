@@ -8,7 +8,7 @@ const Navbar = () => {
       <ul>
         <li>
           <NavLink
-            to="/"
+            to="/dashboard"
             style={({ isActive }) => ({
               color: isActive ? "#312A50" : "white",
             })}
@@ -25,6 +25,7 @@ const Navbar = () => {
           >
             Notes
           </NavLink>
+
         </li>
       </ul>
     </div>

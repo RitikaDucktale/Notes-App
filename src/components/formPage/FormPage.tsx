@@ -1,4 +1,4 @@
-import Form from "../../components/form/Form";
+import Form from "../form/Form";
 import closeIcon from "../../assets/close.png";
 import styles from "./FormPage.module.css";
 import { useNotesContext } from "../../contexts/NotesContext";

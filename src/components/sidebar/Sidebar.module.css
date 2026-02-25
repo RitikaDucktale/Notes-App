@@ -27,6 +27,8 @@
 .footer{
     flex-grow: 1;
     align-self:center ;
-    align-content: flex-end;
-    margin-bottom: 3rem;
+     align-content: flex-end; 
+    margin-bottom: 2rem;
+    height: 100%;
 }
+
