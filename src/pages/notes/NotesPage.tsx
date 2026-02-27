@@ -15,7 +15,7 @@ const NotesPage = () => {
   const  btnIds = ["All","Favourites" ]; 
   let displayNotes = notes;
 
-  useEffect(()=>{
+  useEffect(()=>{ 
     console.log('inide useeffect')
     const timer = setTimeout(()=>{
       setDebounceVal(searchVal);
